@@ -4,29 +4,27 @@
     box-sizing: border-box;
 
 }
-.L-body{
+.R-body{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: linear-gradient(90deg,#ffffff,#3C5936);
 }
-.L-section{
-    position: absolute;
+.R-section{
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2px;
     flex-wrap: wrap;
     overflow: hidden;
-    background: linear-gradient(90deg,#ffffff,#3C5936);
 }
-
-.L-section .login-page{
-    position: absolute;
-    width: 400px;
-    background: #d0cece;
+.R-section .R-login-page{
+    margin-top: 30px;
+    width: 500px;
+    background: rgba(20, 18, 28, 0.666);
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -35,7 +33,7 @@
     border-radius: 4px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
-.L-section .login-page .login-page-content{
+.R-section .R-login-page .R-login-page-content{
     position: relative;
     width: 100%;
     display: flex;
@@ -44,144 +42,173 @@
     flex-direction: column;
     gap: 40px;
 }
-.login-page-content h2{
+.R-login-page-content h2{
     font-size: 2em;
-    color: #284E20;
+    color: #95b496;
 }
-.L-form{
+.R-form{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.L-form .L-inputBx{
+.R-form .R-inputBx{
     position: relative;
     width: 100%;
 }
-.L-form .L-inputBx input{
+.R-form .R-inputBx input{
     position: relative;
     width: 100%;
-    background: #fff;
+    background: #a7a5a5;
     border: none;
     outline: none;
     padding: 25px 10px 7.5px;
     border-radius: 4px;
-    color: #343131;
+    color: #2d2a2a;
     font-weight: 500;
     font-size: 1em;
-    border: 1px solid #989595;
 }
-.L-form .L-inputBx i{
+.R-form .R-inputBx select{
+    position: relative;
+    width: 100%;
+    background: #a7a5a5;
+    border: none;
+    outline: none;
+    padding: 5px 10px 7.5px;
+    border-radius: 4px;
+    color: #2d2a2a;
+    font-weight: 500;
+    font-size: 1em;
+}
+.R-form .R-inputBx label{
+    color: #dbd3d3;
+    padding-left: 5px;
+}
+.R-form .R-inputBx i{
     position: absolute;
     left: 0;
     padding: 15px 10px;
     font-style: normal;
-    color: #454343;
+    color: #383333;
     transition: 0.5s;
     pointer-events: none;
 }
-.L-form .L-inputBx input:focus ~ i,
-.L-form .L-inputBx input:valid ~ i{
+.R-form .R-inputBx input:focus ~ i,
+.R-form .R-inputBx input:valid ~ i{
     transform: translateY(-7.5px);
     font-size: 0.8em;
     color: #fff;
 }
 
-.L-form .L-links{
+.R-form .R-links{
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.L-form .L-links h4{
-    color: rgb(47, 44, 44);
+.R-form .R-links h4{
+    color: rgb(227, 215, 215);
     text-decoration: none;
     font-size: 12px;
 }
-#reglink{
-    color: #284E20;
+#loglink{
+    color: #27792a;
     font-size: 16px;
     font-style: italic;
     transition: 0.4s;
 }
-#reglink:hover{
+#loglink:hover{
     transform: scale(1.1);
 }
-.L-form .L-inputBx input[type="submit"]{
+.R-form .R-inputBx input[type="submit"]{
     padding: 10px;
-    background-color: #133E06;
-    color: #dfdfdf;
+    background-color: #0A220B;
+    color: #ffffff;
     font-weight: 600;
     font-size: 1.25em;
     letter-spacing: 0.05em;
     cursor: pointer;
     transition: 0.4s;
 }
-.L-form .L-inputBx input[type="submit"]:hover{
+.R-form .R-inputBx input[type="submit"]:hover{
     transform: scale(1.1);
 }
 
 @media (max-width: 900px){
-    .L-section span
+    .R-section span
     {
         width: calc(10vw - 2px);
         height: calc(10vw - 2px);
     }
 }
 
-#maxtitle{
-    font-size: 40px;
+#R-maxtitle{
+    font-size: 35px;
+    color: #0e2c0f;
 }
 
 @media (max-width: 650px){
-    .L-section span
+    .R-section span
     {
         width: calc(20vw - 2px);
         height: calc(20vw - 2px);
     }
-    .login-page-content h2{
+    .R-login-page-content h2{
         font-size: 1em;
     }
-    #maxtitle{
+    #R-maxtitle{
         font-size: 1.5em;
     }
-    .L-form .L-inputBx input{
+    .R-form .R-inputBx input{
         font-weight: 400;
         font-size: .8em;
         height: 40px;
         background: #32313181;
     }
-    .L-section .login-page{
+    .R-section .R-login-page{
         width: 250px;
         padding: 20px;
     }
-    .L-section .login-page .login-page-content{
+    .R-section .R-login-page .R-login-page-content{
         gap: 25px;
     }
-    .L-form{
+    .R-form{
         gap: 25px;
     }
-    .L-form .L-inputBx{
+    .R-form .R-inputBx{
         position: relative;
         width: 100%;
     }
-    .L-form .L-inputBx i{
+    .R-form .R-inputBx i{
         font-size: .8em;
     }
-    .L-form .L-inputBx input:focus ~ i,
-    .L-form .L-inputBx input:valid ~ i{
+    .R-form .R-inputBx input:focus ~ i,
+    .R-form .R-inputBx input:valid ~ i{
         font-size: 0.6em;
     }
-    .L-form .L-links h4{
+    .R-form .R-links h4{
         color: rgb(185, 176, 176);
         font-size: 8px;
     }
-    #reglink{
+    #loglink{
         font-size: 12px;
     }
-    .L-form .L-inputBx input[type="submit"]{
+    .R-form .R-inputBx input[type="submit"]{
         padding: 5px;
         font-size: .9em;
     }
+}
+
+.company-logo{
+    width: 600px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.company-logo p{
+    font-size: 12px;
+    font-style: italic;
 }
