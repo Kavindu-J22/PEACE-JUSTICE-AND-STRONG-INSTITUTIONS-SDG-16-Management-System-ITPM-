@@ -73,7 +73,7 @@ function Header() {
 
             </ul>
 
-            {
+            {/* {
                 isAdmin ? '' 
                 :<div className="cart-icon">
                     <span>{cart.length}</span>
@@ -81,7 +81,7 @@ function Header() {
                         <img src={Cart} alt="" width="30" />
                     </Link>
                 </div>
-            }
+            } */}
             
         </header>
     )

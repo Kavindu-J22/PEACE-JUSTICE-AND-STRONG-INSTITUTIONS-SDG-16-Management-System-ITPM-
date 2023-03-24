@@ -56,7 +56,7 @@ function Products() {
         })
     }
 
-    if(loading) return <div><Loading /></div>
+    // if(loading) return <div><Loading /></div>
     return (
         <>
         <Filters />
@@ -80,7 +80,8 @@ function Products() {
         </div>
 
         <LoadMore />
-        {products.length === 0 && <Loading />}
+        {products.length === 0 }
+        {/* {products.length === 0 && <Loading />} */}
         </>
     )
 }
