@@ -29,9 +29,7 @@ mongoose.connection.on('connected', () => {
 });
 
 // Routes
-app.get('/', (req, res) => {
-  res.send('Welcome..!, To HRAMONY HUB( SDG-16 )');
-});
+app.use('/user', require('./routes/userRouter').default);
 
 // Start server
 const PORT = process.env.PORT || 5000;
