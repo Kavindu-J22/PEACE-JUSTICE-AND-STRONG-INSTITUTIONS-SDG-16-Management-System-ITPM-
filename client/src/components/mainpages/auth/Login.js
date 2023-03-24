@@ -28,7 +28,7 @@ function Login() {
                 timer: 1000,
             })
             .then((value) => {
-                window.location.href = "/Header/NewHeader";
+                window.location.href = "/";
             });
 
         } catch (err) {

@@ -29,7 +29,7 @@ function Register() {
                 timer: 1200,
             })
             .then((value) => {
-                window.location.href = "/Header/NewHeader";
+                window.location.href = "/";
             });
 
         } catch (err) {
