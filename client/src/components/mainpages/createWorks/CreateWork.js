@@ -8,13 +8,13 @@ const initialState = {
     product_id: '',
     title: '',
     price: 0,
-    description: '',
-    content: '',
+    description: 'Enter brif Discription here',
+    content: 'Enter Your Work Content',
     category: '',
     _id: ''
 }
 
-function CreateProduct() {
+function CreateWork() {
     const state = useContext(GlobalState)
     const [product, setProduct] = useState(initialState)
     const [categories] = state.categoriesAPI.categories
@@ -28,9 +28,9 @@ function CreateProduct() {
     const history = useHistory()
     const param = useParams()
 
-    const [products] = state.productsAPI.products
+    const [products] = state.worksAPI.products
     const [onEdit, setOnEdit] = useState(false)
-    const [callback, setCallback] = state.productsAPI.callback
+    const [callback, setCallback] = state.worksAPI.callback
 
     useEffect(() => {
         if(param.id){
@@ -112,7 +112,7 @@ function CreateProduct() {
                 })
             }
             setCallback(!callback)
-            history.push("/Products")
+            history.push("/Works")
         } catch (err) {
             alert(err.response.data.msg)
         }
@@ -123,12 +123,7 @@ function CreateProduct() {
     }
     return (
         <div className="create_product">
-            <div>
-                <h1>Add New Blog</h1>
-            </div>
-            <div className='main-content'>
             <div className="upload">
-                
                 <input type="file" name="file" id="file_up" onChange={handleUpload}/>
                 {
                     loading ? <div id="file_img"><Loading /></div>
@@ -143,9 +138,15 @@ function CreateProduct() {
 
             <form onSubmit={handleSubmit}>
                 <div className="row">
-                    <label htmlFor="product_id">Blog ID</label>
+                    <label htmlFor="product_id">Work ID</label>
                     <input type="text" name="product_id" id="product_id" required
                     value={product.product_id} onChange={handleChangeInput} disabled={onEdit} />
+                </div>
+
+                <div className="row">
+                    <label htmlFor="title">About What</label>
+                    <input type="text" name="title" id="title" required
+                     />
                 </div>
 
                 <div className="row">
@@ -155,25 +156,9 @@ function CreateProduct() {
                 </div>
 
                 <div className="row">
-                    <label htmlFor="price">Blog Part</label>
+                    <label htmlFor="price">Work Charge</label>
                     <input type="number" name="price" id="price" required
                     value={product.price} onChange={handleChangeInput} />
-                </div>
-
-                <div className="row">
-                    <label htmlFor="price">Author</label>
-                    <input type="number" name="price" id="price" required
-                     />
-                </div>
-
-                <div className="row">
-                    <label htmlFor="price">Type</label>
-                    <select name="cars" id="cars">
-                                <option value="Male">Important</option>
-                                <option value="Female">Normal</option>
-                                <option value="Other">Very Important</option>
-                 </select>
-                     
                 </div>
 
                 <div className="row">
@@ -204,9 +189,8 @@ function CreateProduct() {
 
                 <button type="submit">{onEdit? "Update" : "Create"}</button>
             </form>
-            </div>
         </div>
     )
 }
 
-export default CreateProduct
+export default CreateWork

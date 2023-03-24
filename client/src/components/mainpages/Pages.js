@@ -14,6 +14,9 @@ import CreateProduct from './createProduct/CreateProduct'
 import Homepage from '../headers/Landingpage'
 import Aboutme from '../headers/Aboutme'
 import Servicepage from '../headers/Sevicepage'
+import CreateWork from './createWorks/CreateWork'
+import Works from './works/Works'
+import DetailWork from './detailWork/DetailWork'
 
 import {GlobalState} from '../../GlobalState'
 
@@ -31,6 +34,7 @@ function Pages() {
             <Route path="/Servicepage" exact component={Servicepage} />
             <Route path="/Products" exact component={Products} />
             <Route path="/detail/:id" exact component={DetailProduct} />
+            <Route path="/DetailWork/:id" exact component={DetailWork} />
 
             <Route path="/login" exact component={isLogged ? NotFound : Login} />
             <Route path="/register" exact component={isLogged ? NotFound : Register} />
@@ -38,6 +42,9 @@ function Pages() {
             <Route path="/category" exact component={isAdmin ? Categories : NotFound} />
             <Route path="/create_product" exact component={isAdmin ? CreateProduct : NotFound} />
             <Route path="/edit_product/:id" exact component={isAdmin ? CreateProduct : NotFound} />
+
+            <Route path="/CreateWork" exact component={isAdmin ? CreateWork : NotFound} />
+            <Route path="/Works" exact component={isAdmin ? Works : NotFound} />
 
             <Route path="/history" exact component={isLogged ? OrderHistory : NotFound} />
             <Route path="/history/:id" exact component={isLogged ? OrderDetails : NotFound} />

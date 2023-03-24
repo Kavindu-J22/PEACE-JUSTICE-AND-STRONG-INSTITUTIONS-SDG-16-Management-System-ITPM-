@@ -4,18 +4,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column;
-}
-.ccreate_product{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
 }
 .upload{
     max-width: 450px;
-    height: 400px;
+    height: 500px;
     width: 100%;
     border: 1px solid #ddd;
     padding: 15px;
@@ -36,8 +28,8 @@
     top:0;
     left: 0;
     background: white;
-    color: rgb(19, 133, 44);
-    font-size: 12rem;
+    color: rgb(250, 200, 107);
+    font-size: 17rem;
     text-align: center;
     cursor: pointer;
     margin: auto;
@@ -79,7 +71,7 @@
     width: 100%;
     margin: 15px 0;
 }
-.create_product form input, textarea, select{
+.create_product form input, textarea{
     width: 100%;
     min-height: 40px;
     padding: 0 5px;
@@ -92,10 +84,4 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
-}
-.main-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
