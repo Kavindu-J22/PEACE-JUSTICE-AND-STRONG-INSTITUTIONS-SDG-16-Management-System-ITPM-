@@ -29,7 +29,9 @@ mongoose.connection.on('connected', () => {
 });
 
 // Routes
-app.use('/user', require('./routes/userRouter').default);
+app.use('/user', require('./routes/userRouter'));
+
+
 
 // Start server
 const PORT = process.env.PORT || 5000;

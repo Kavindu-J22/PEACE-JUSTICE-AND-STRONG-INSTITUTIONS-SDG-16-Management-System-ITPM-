@@ -1,5 +1,5 @@
-import { Router } from 'express';
-const router = Router();
+const express = require('express');
+const router = express.Router();
 
 // Create a new user
 router.post('/register', (req, res) =>{
@@ -18,4 +18,4 @@ router.post('/register', (req, res) =>{
 // // Delete a user by ID
 // router.delete('/:id', userController.deleteUserById);
 
-export default router
+module.exports = router
