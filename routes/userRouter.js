@@ -1,21 +1,20 @@
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router()
+const userCtrl = require('../controllers/userCtrl')
+const auth = require('../middleware/auth')
 
-// Create a new user
-router.post('/register', (req, res) =>{
-    res.json({msg: "test Router"})
-})
+router.post('/register', userCtrl.register)
 
-// // Get all users
-// router.get('/', userController.getAllUsers);
+router.post('/login', userCtrl.login)
 
-// // Get a user by ID
-// router.get('/:id', userController.getUserById);
+router.get('/logout', userCtrl.logout)
 
-// // Update a user by ID
-// router.put('/:id', userController.updateUserById);
+router.get('/refresh_token', userCtrl.refreshToken)
 
-// // Delete a user by ID
-// router.delete('/:id', userController.deleteUserById);
+router.get('/infor', auth,  userCtrl.getUser)
+
+router.patch('/addcart', auth, userCtrl.addCart)
+
+router.get('/history', auth, userCtrl.history)
+
 
 module.exports = router
