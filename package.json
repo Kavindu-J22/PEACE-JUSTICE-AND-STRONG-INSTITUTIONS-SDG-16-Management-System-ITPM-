@@ -1,0 +1,35 @@
+{
+  "name": "peace-justice-and-strong-institutions-sdg-16-management-system-itpm-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kavindu-J22/PEACE-JUSTICE-AND-STRONG-INSTITUTIONS-SDG-16-Management-System-ITPM-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kavindu-J22/PEACE-JUSTICE-AND-STRONG-INSTITUTIONS-SDG-16-Management-System-ITPM-/issues"
+  },
+  "homepage": "https://github.com/Kavindu-J22/PEACE-JUSTICE-AND-STRONG-INSTITUTIONS-SDG-16-Management-System-ITPM-#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.35.0",
+    "concurrently": "^7.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
