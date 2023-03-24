@@ -5,6 +5,13 @@
     justify-items: center;
     margin: 20px 0;
 }
+#addblog{
+    margin: 10px;
+    padding: 8px 20px;
+    background: #555;
+    color: aliceblue;
+    border-radius: 10px;
+}
 
 /* ----------- Product Item ----------------- */
 @import url("../utils/productItem/productItem.css");
@@ -21,14 +28,15 @@
 }
 .delete-all span{
     text-transform: uppercase;
-    color: rgb(3, 165, 206);
+    color: rgb(13, 184, 52);
     letter-spacing: 1.3px;
 }
 .delete-all button{
-    border: 1px solid crimson;
+    border: 1px solid rgb(155, 21, 48);
     padding: 10px 25px;
-    color: crimson;
+    color: rgb(155, 21, 48);
     text-transform: uppercase;
+    border-radius: 10px;
 }
 
 /* ------------ Filters Menu ----------------- */

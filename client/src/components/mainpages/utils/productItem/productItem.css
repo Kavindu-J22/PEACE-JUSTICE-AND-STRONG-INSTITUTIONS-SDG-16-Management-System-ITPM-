@@ -6,6 +6,7 @@
     box-shadow: 0 0 15px #ddd;
     margin: 10px 0;
     position: relative;
+    background: #3232322a;
 }
 .product_card img{
     width: 100%;
@@ -23,7 +24,8 @@
     color: #323232;
 }
 .product_card span{
-    color: crimson;
+    color: rgb(39, 132, 34);
+    font-weight: 600;
 }
 .product_box p{
     width: 100%;
@@ -54,7 +56,7 @@
     margin-right: 5px;
 }
 #btn_view{
-    background: teal;
+    background: rgb(8, 78, 8);
     margin-left: 5px;
 }
 .product_card input{

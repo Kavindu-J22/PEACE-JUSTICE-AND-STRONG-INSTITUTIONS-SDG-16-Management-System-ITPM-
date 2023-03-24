@@ -5,6 +5,7 @@ import Loading from '../utils/loading/Loading'
 import axios from 'axios'
 import Filters from './Filters'
 import LoadMore from './LoadMore'
+import {Link} from 'react-router-dom'
 
 
 function Products() {
@@ -67,6 +68,7 @@ function Products() {
                 <span>Select all</span>
                 <input type="checkbox" checked={isCheck} onChange={checkAll} />
                 <button onClick={deleteAll}>Delete ALL</button>
+                <Link id='addblog' to="/create_product">Add New Blog</Link>
             </div>
         }
 

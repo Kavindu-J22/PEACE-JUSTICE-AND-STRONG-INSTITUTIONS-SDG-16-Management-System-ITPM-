@@ -10,7 +10,10 @@ import Cart from './cart/Cart'
 import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
+
 import Homepage from '../headers/Landingpage'
+import Aboutme from '../headers/Aboutme'
+import Servicepage from '../headers/Sevicepage'
 
 import {GlobalState} from '../../GlobalState'
 
@@ -24,6 +27,8 @@ function Pages() {
     return (
         <Switch>
             <Route path="/" exact component={Homepage} />
+            <Route path="/Aboutme" exact component={Aboutme} />
+            <Route path="/Servicepage" exact component={Servicepage} />
             <Route path="/Products" exact component={Products} />
             <Route path="/detail/:id" exact component={DetailProduct} />
 

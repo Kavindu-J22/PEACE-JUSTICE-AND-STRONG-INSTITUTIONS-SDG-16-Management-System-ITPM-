@@ -112,7 +112,7 @@ function CreateProduct() {
                 })
             }
             setCallback(!callback)
-            history.push("/")
+            history.push("/Products")
         } catch (err) {
             alert(err.response.data.msg)
         }
