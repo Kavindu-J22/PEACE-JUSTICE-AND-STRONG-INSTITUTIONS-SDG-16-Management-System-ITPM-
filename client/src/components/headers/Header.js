@@ -33,7 +33,7 @@ function Header() {
     const loggedRouter = () =>{
         return(
             <>
-                <li><Link to="/history">{isAdmin ? 'RATE PAGE' : 'MY RATINGS'}</Link></li>
+                <li><Link to="/Stock/">{isAdmin ? 'RATE PAGE' : 'MY RATINGS'}</Link></li>
                 <li><Link to="/" onClick={logoutUser}>Logout</Link></li>
             </>
         )

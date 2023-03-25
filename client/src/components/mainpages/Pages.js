@@ -18,6 +18,10 @@ import CreateWork from './createWorks/CreateWork'
 import Works from './works/Works'
 import DetailWork from './detailWork/DetailWork'
 
+import CreateStock from './Rate/create-Stock.component'
+import StockList from './Rate/Stock-list.component'
+import EditStock from './Rate/edit-Stock.component'
+
 import {GlobalState} from '../../GlobalState'
 
 
@@ -35,6 +39,11 @@ function Pages() {
             <Route path="/Products" exact component={Products} />
             <Route path="/detail/:id" exact component={DetailProduct} />
             <Route path="/DetailWork/:id" exact component={DetailWork} />
+
+            <Route path="/Stock-add/" exact component={CreateStock} />
+            <Route path="/Stock/" exact component={StockList} />
+            <Route path="/Stock-Edit/:id" exact component={EditStock} />
+
 
             <Route path="/login" exact component={isLogged ? NotFound : Login} />
             <Route path="/register" exact component={isLogged ? NotFound : Register} />
