@@ -101,7 +101,7 @@ export default class StockList extends Component {
         <div className = "container" >
                 <div className = "row" >
                     <div className = "col-lg-9 mt-2 mb-2" >
-                        <h4 > Stock List </h4> 
+                        <h4 > My Ratings </h4> 
                     </div> 
 
 
@@ -110,7 +110,7 @@ export default class StockList extends Component {
                     <div className = "col-lg-3 mt-2 mb-2" >
                         <input className = "form-control"
                             type = "search"
-                            placeholder = "Search Item Code.."
+                            placeholder = "Search Rate here.."
                             name = "searchQuery"
                             onChange = { this.handleSearchArea } >
                         </input> 
@@ -119,11 +119,11 @@ export default class StockList extends Component {
                     <table className = "table" >
                             <thead className = "thead-light" >
                                 <tr>
-                                    <th> Item Code </th> 
-                                    <th> Product Name </th> 
-                                    <th> Description </th> 
-                                    <th> Unit Price </th> 
-                                    <th > Quantity </th> 
+                                    <th> Flexibility Rate </th> 
+                                    <th> Availability Rate </th> 
+                                    <th> Humanity Rate </th> 
+                                    <th> Quality of Service </th> 
+                                    <th > Satisfaction Level </th> 
                                     <th > Action </th> 
                                 </tr > 
                             </thead> 
@@ -156,10 +156,7 @@ export default class StockList extends Component {
                     
                     < Link to = "/Stock-add/" >
                     <button type = "button" class = "btn btn-success" variant = "primary" >
-                    Add New Stock  </button> </Link > </div>
-                    <div style = {{ float: 'left' }} >
-                    <Link to = "/Stock-report/" >
-                                <button type="button" class="btn btn-danger" variant = "primary" >Get Report </button></Link ></div>
+                    Add New Rate  </button> </Link > </div>
             </div>
         )
     }

@@ -106,7 +106,7 @@ export default class CreateStock extends Component {
         return ( <div  >
             <div class = "row ">
             <div class = "col-6" >
-            <br/>{ <img src="https://www.clipartkey.com/mpngs/m/169-1693853_inventory-control-software-market-inventory-management.png" width="100%" height="90%" /> }
+            <br/>{ <img src="https://www.clipartkey.com/mpngs/m/169-1693853_inventory-control-software-market-inventory-management.png" width="30%" height="50%" /> }
             </div> <div class = "col-6" >
             <div div class = "myformstyle" >
             <div className = "card-body" 
@@ -122,51 +122,51 @@ export default class CreateStock extends Component {
             
              <form onSubmit = { this.onSubmit } >
                         <div className = "form-group" style = {{ marginBottom: '15px' }} >
-                            <label style = {{ marginBottom: '5px' }} > Item code </label> 
+                            <label style = {{ marginBottom: '5px' }} > Flexibility Rate </label> 
                             <input type = "number"
                             required className = "form-control"
                             name = "Item Code "
-                            placeholder = "Enter Code"
+                            placeholder = "1 - 5"
                             value = { this.state.Itemcode }
                             onChange = { this.onChangeItemcode }/> 
                         </div>
                         <div className = "form-group" >
-                            <label> Product Name: </label> <
-                            input type = "text"
+                            <label> Availability Rate : </label> <
+                            input type = "number"
                             required className = "form-control"
                             name = "Product Name"
-                            placeholder = "Enter Product Name"
+                            placeholder = "1 - 5"
                             value = { this.state.Productname }
                             onChange = { this.onChangeProductname }/> 
                         </div > 
                         <div className = "form-group" >
-                            <label> Description: </label> <
-                            input type = "text"
+                            <label> Humanity Rate : </label> <
+                            input type = "number"
                             required className = "form-control"
                             name = "Description"
-                            placeholder = "Enter Description"
+                            placeholder = "1 - 5"
                             value = { this.state.Discription }
                             onChange = { this.onChangeDiscription }/> 
                         </div >
 
 
                         <div className = "form-group" >
-                            <label > Unit Price: </label> <
-                            input type = "number"
+                            <label > Quality of Service : </label> <
+                            input type = "Text"
                             required className = "form-control"
                             name = "Unit Price"
-                            placeholder = "Enter Unit Price"
+                            placeholder = "Enter here"
                             value = { this.state.Unitprice }
                             onChange = { this.onChangeUnitprice }/> 
                         </div>
 
 
                         <div className = "form-group" >
-                            <label > Quantity: </label> <
-                            input type = "number"
+                            <label > Satisfaction Level: </label> <
+                            input type = "Text"
                             required className = "form-control"
                             name = "Qty"
-                            placeholder = "Enter Qty"
+                            placeholder = "Enter here"
                             value = { this.state.qty }
                             onChange = { this.onChangeqty }
                             /> 
@@ -174,7 +174,7 @@ export default class CreateStock extends Component {
 
                         <div className = "form-group" >
                             <input type = "submit"
-                            value = "Add To Stock"
+                            value = "Add Rate"
                             className = "btn btn-primary" / >
             </div>
             {" "} </form >  </div> </div > </div>
