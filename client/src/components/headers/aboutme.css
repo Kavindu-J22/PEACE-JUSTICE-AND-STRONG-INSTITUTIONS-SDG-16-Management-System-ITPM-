@@ -1,0 +1,36 @@
+.aboutsection{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.aboutform{
+    background: #333;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+.leftbar{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.personcard{
+    width: 90%;
+    height: 400px;
+    background: #837f7f;
+    margin: 10px;
+}
+#abtbtn{
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

@@ -1,18 +1,25 @@
 import React, {useContext, useState} from 'react'
 import {Link} from 'react-router-dom'
+import './aboutme.css'
 
 function Aboutme() {
     
 
     return (
-        <section>
-            <div>
-                About-Me Page
+        <section className='aboutsection'>
+            <div className='leftbar'>
+                <div className='personcard'>
+                    
+                </div>
+                <Link id='abtbtn' to="/Works">Your Works(Add)</Link>
+
             </div>
 
-            <div>
-                <Link to="/Works">Your Works(Add)</Link>
+            <div className='aboutform'>
+                About Form
             </div>
+
+           
             
         </section>
     )
