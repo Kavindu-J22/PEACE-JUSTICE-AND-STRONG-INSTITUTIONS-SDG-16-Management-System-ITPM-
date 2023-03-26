@@ -131,9 +131,9 @@ function CreateProduct() {
                 
                 <input type="file" name="file" id="file_up" onChange={handleUpload}/>
                 {
-                    loading ? <div id="file_img"><Loading /></div>
+                    // loading ? <div id="file_img"><Loading /></div>:
 
-                    :<div id="file_img" style={styleUpload}>
+                    <div id="file_img" style={styleUpload}>
                         <img src={images ? images.url : ''} alt=""/>
                         <span onClick={handleDestroy}>X</span>
                     </div>
@@ -162,7 +162,7 @@ function CreateProduct() {
 
                 <div className="row">
                     <label htmlFor="price">Author</label>
-                    <input type="number" name="price" id="price" required
+                    <input type="text" name="price" id="price" required
                      />
                 </div>
 
