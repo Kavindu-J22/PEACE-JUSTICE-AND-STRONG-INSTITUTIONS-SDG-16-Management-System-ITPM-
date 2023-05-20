@@ -115,7 +115,7 @@ export default class CreateStock extends Component {
 
             <div className = "col-md-8 mt-4 mx-auto" > </div> 
             <h3 className = "text-center" > 
-            <font face = "Comic sans MS" size = "6" > New Stock </font>
+            <font face = "Comic sans MS" size = "6" > New Rate </font>
             </h3 > <br></br>
             
             <br></br>

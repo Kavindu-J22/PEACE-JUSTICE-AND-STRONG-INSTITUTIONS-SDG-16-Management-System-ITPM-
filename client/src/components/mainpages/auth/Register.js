@@ -16,7 +16,7 @@ function Register() {
     address: '',
     nicOrPassportNumber: '',
     password: '',
-    role: '1',
+    role: '',
   });
 
   const onChangeInput = (e) => {
@@ -166,7 +166,7 @@ function Register() {
           <div className="R-inputBx">
             <label htmlFor="userType">User Type</label>
             <select
-              name="userType"
+              name="role"
               id="userType"
               value={user.role}
               onChange={onChangeInput}

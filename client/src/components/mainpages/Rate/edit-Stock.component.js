@@ -131,7 +131,7 @@ export default class EditStock extends Component {
             <div className = "col-md-8 mt-4 mx-auto"> </div>  
             <h3 className = "text-center">
             <font face = "Comic sans MS"
-            size = "6" > Edit Stock Details </font> 
+            size = "6" > Edit Rating Details </font> 
             </h3><br></br>
 
             <br></br>
